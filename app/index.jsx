@@ -10,7 +10,9 @@ const Home = () => {
       />
       <View style={styles.view}>
         <Text style={styles.title}>Panuwat Thammabut</Text>
-        <Text style={styles.subtitle}>Computer and Information Science</Text>
+        <Text style={styles.title}>653450099-8</Text>
+        <Text style={styles.subtitle}>Branch : Computer Science</Text>
+        <Text style={styles.subtitle}>Course : Computer and Information Science</Text>
         <Text style={styles.text}>Khon Kaen University</Text>
         <Text style={styles.text}>Skill : </Text>
         <Text style={styles.text}>Python Java C# JavaScript TypeScript</Text>
