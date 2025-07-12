@@ -1,9 +1,15 @@
-import { Stack } from "expo-router";
+// app/_layout.js
+import { Stack } from 'expo-router';
+import { ThemeProvider } from '../contexts/themeContext';
 
-export default function Layout() {
+export default function RootLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="index" options={{ title: "Profile" }} />
-    </Stack>
+    // ครอบทุกอย่างด้วย ThemeProvider
+    <ThemeProvider>
+      <Stack>
+        {/* ซ่อน Header ของ Layout หลัก แล้วไปตั้งค่าใน Tab Layout แทน */}
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      </Stack>
+    </ThemeProvider>
   );
 }
